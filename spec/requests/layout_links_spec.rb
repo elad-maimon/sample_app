@@ -52,7 +52,7 @@ describe "LayoutLinks" do
 /#
   it "should have the right link for Sign in page" do
     visit root_path
-    click_link "Sign up now!"
+    click_link "Sign in"
     response.should have_selector('title', :content => "Sign in")
   end
 
