@@ -55,13 +55,16 @@ describe "LayoutLinks" do
     click_link "Sign in"
     response.should have_selector('title', :content => "Sign in")
   end
-/#
+
   it "should have the right link for Sign up button" do
+    pending "fix test #{__FILE__}"
+/#
     visit root_path
     click_link "Sign up now!"
     response.should have_selector('title', :content => "Sign up")
-  end
 #/
+  end
+
 
   describe "when not signed in" do
   
